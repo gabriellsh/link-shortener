@@ -1,2 +1,4 @@
 RewriteEngine On
-RewriteRule ^.*$ http://koro.ml/redirect.php [R=301,L]
+
+RewriteCond $1 !^(index\.php)
+RewriteRule ^(.*)$ index.php?1=$1 [L]

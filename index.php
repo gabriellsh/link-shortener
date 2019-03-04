@@ -35,3 +35,9 @@
 </body>
 </html>
 
+<?
+include "redirect.php";
+
+if($_GET['1']!="" || $_GET['1']!=null){
+	header("Location:".Redirect::uriRedirect($_GET['1']))
+}
