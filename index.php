@@ -37,7 +37,8 @@
 
 <?
 include "redirect.php";
-
+include "connection.php";
 if($_GET['1']!="" || $_GET['1']!=null){
-	header("Location:".Redirect::uriRedirect($_GET['1']))
+	$local=Redirect::uriRedirect($_GET['1']);
+	header("Location: ". $local);
 }
